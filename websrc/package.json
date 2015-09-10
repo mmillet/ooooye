@@ -1,0 +1,20 @@
+{
+  "name": "ooooye",
+  "version": "0.0.1",
+  "description": "ooooye project.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmillet/ooooye.git"
+  },
+  "keywords": [
+    "fis3",
+    "react",
+    "redux",
+    "koa"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^1.0.0"
+  }
+}
