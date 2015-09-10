@@ -4,13 +4,15 @@
 
 var logger = require('koa-logger');
 var route = require('koa-route');
-var koa_static = require('koa-static');
+var koaStaticCache = require('koa-static-cache');
 var koa = require('koa');
 var app = module.exports = koa();
 
 // middleware
 app.use(logger());
-app.use(koa_static(__dirname + '/public'));
+app.use(koaStaticCache(__dirname + '/public'), {
+  maxAge: 365 * 24 * 60 * 60
+});
 
 // route middleware
 var routes = require('./routes.js');
