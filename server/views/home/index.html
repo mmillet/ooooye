@@ -1,0 +1,15 @@
+{% extends '../layout.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+  <h1>Hello {{user}}</h1>
+  <p>{{time}}</p>
+  <div id="rt">{{counterHTML|safe}}</div>
+{% endblock %}
+
+{% block script %}
+  <script src="react.js"></script>
+  <script src="counter.js"></script>
+  <script src="./index.js"></script>
+{% endblock %}

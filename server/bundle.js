@@ -106,7 +106,8 @@ module.exports = React.createClass({displayName: "exports",
       count : this.state.count + 1
     });
   },
-  render : function(){
+  render : function() {
+    console.log(123);
     return (
       React.createElement("div", {onClick: this.onClick}, 
         "Count (Click to increment): ", this.state.count
@@ -114,6 +115,7 @@ module.exports = React.createClass({displayName: "exports",
     )
   }
 });
+
 },{"react":157}],3:[function(require,module,exports){
 /**
  * Copyright 2013-2015, Facebook, Inc.

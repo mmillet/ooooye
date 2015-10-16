@@ -8,12 +8,12 @@ module.exports = React.createClass({
       count : this.props.count ? this.props.count : 0
     };
   },
-  onClick : function(event){
+  onClick : function(event) {
     this.setState({
       count : this.state.count + 1
     });
   },
-  render : function(){
+  render : function() {
     return (
       <div onClick={this.onClick}>
         Count (Click to increment): {this.state.count}
